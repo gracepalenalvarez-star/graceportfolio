@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Grace Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[#2b2d42] font-['League_Spartan']" style="background-image: url('./assets/images/Background .png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Header -->
+    <header class="bg-[#2b2d42]/70 backdrop-blur-sm border-b border-gray-700">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-[#EEAD2B]">grace.</a>
+                <div class="hidden md:flex space-x-12 text-lg">
+                    <a href="index.html#home" class="text-white hover:text-[#EEAD2B] font-semibold">Home</a>
+                    <a href="projects.html" class="text-[#EEAD2B] hover:text-[#ffc04d] font-bold">Project</a>
+                    <a href="about.html" class="text-white hover:text-[#EEAD2B] font-semibold">About</a>
+                    <a href="index.html#contact" class="text-white hover:text-[#EEAD2B] font-semibold">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Projects Page Content -->
+    <section class="relative min-h-screen py-20">
+        <div class="relative container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-16 text-center">My Projects</h1>
+
+            <!-- Container for smooth transitions -->
+            <div class="relative overflow-hidden">
+                <!-- 3D Modeling Section -->
+                <div id="section-3d" class="mb-20">
+                    <!-- Content that transitions -->
+                    <div class="transition-all duration-700 ease-in-out transform">
+                        <!-- Images -->
+                        <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-8 max-w-5xl mx-auto">
+                            <img src="./assets/images/3d modeling pic 1.png" alt="3D Modeling 1" class="rounded-2xl shadow-2xl w-full md:w-[380px] h-[280px] object-cover">
+                            <img src="./assets/images/3d modeling pic 2.png" alt="3D Modeling 2" class="rounded-2xl shadow-2xl w-full md:w-[380px] h-[280px] object-cover">
+                        </div>
+
+                        <!-- Title and Description -->
+                        <div class="text-center max-w-4xl mx-auto">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-300 mb-6">3D Modeling</h2>
+                            <p class="text-[#EEAD2B] text-lg md:text-xl leading-relaxed">
+                                These projects show my basic 3D modeling practice in Blender, creating simple models and scenes. This highlight my learning in materials, lighting, and rendering.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons (static) -->
+                    <div class="flex justify-center gap-4 mt-8">
+                        <button onclick="showSection('design')" class="w-14 h-14 rounded-full border-2 border-[#EEAD2B] flex items-center justify-center hover:bg-[#EEAD2B] transition group flex-shrink-0">
+                            <svg class="w-7 h-7 text-[#EEAD2B] group-hover:text-[#2b2d42]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Design/Concept Section -->
+                <div id="section-design" class="mb-20 hidden">
+                    <!-- Content that transitions -->
+                    <div class="transition-all duration-700 ease-in-out transform">
+                        <!-- Images Grid -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center mb-8 max-w-6xl mx-auto">
+                            <img src="./assets/images/design_con pic 1.png" alt="Design 1" class="rounded-2xl shadow-2xl w-full h-[280px] object-cover">
+                            <img src="./assets/images/design_con pic 2.png" alt="Design 2" class="rounded-2xl shadow-2xl w-full h-[280px] object-cover">
+                            <img src="./assets/images/design_con pic 3.png" alt="Design 3" class="rounded-2xl shadow-2xl w-full h-[280px] object-cover">
+                            <img src="./assets/images/design_con pic 4.png" alt="Design 4" class="rounded-2xl shadow-2xl w-full h-[280px] object-cover">
+                        </div>
+
+                        <!-- Title and Description -->
+                        <div class="text-center max-w-4xl mx-auto">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-300 mb-6">Design/Concept</h2>
+                            <p class="text-[#EEAD2B] text-lg md:text-xl leading-relaxed">
+                                I created visual assets such as character cards, posters, and game layouts. These works reflect my creativity in design and concept development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons (static) -->
+                    <div class="flex justify-center gap-4 mt-8">
+                        <button onclick="showSection('3d')" class="w-14 h-14 rounded-full border-2 border-[#EEAD2B] flex items-center justify-center hover:bg-[#EEAD2B] transition group flex-shrink-0">
+                            <svg class="w-7 h-7 text-[#EEAD2B] group-hover:text-[#2b2d42]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button onclick="showSection('video')" class="w-14 h-14 rounded-full border-2 border-[#EEAD2B] flex items-center justify-center hover:bg-[#EEAD2B] transition group flex-shrink-0">
+                            <svg class="w-7 h-7 text-[#EEAD2B] group-hover:text-[#2b2d42]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Video Editing Section -->
+                <div id="section-video" class="mb-20 hidden">
+                    <!-- Content that transitions -->
+                    <div class="transition-all duration-700 ease-in-out transform">
+                        <!-- Video Player -->
+                        <div class="flex justify-center items-center mb-8 max-w-4xl mx-auto">
+                            <video controls class="rounded-2xl shadow-2xl w-full max-w-2xl" poster="./assets/images/PROJECT PIC 3.png">
+                                <source src="./assets/videos/ads VIDEO.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Title and Description -->
+                        <div class="text-center max-w-4xl mx-auto">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-300 mb-6">Product Video Editing</h2>
+                            <p class="text-[#EEAD2B] text-lg md:text-xl leading-relaxed">
+                                This category features short video edits made to showcase products clearly and attractively. It demonstrates my basic skills in cutting, arranging clips, and enhancing visuals through simple editing techniques.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons (static) -->
+                    <div class="flex justify-center gap-4 mt-8">
+                        <button onclick="showSection('design')" class="w-14 h-14 rounded-full border-2 border-[#EEAD2B] flex items-center justify-center hover:bg-[#EEAD2B] transition group flex-shrink-0">
+                            <svg class="w-7 h-7 text-[#EEAD2B] group-hover:text-[#2b2d42]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center mt-12">
+                <a href="index.html#project" class="inline-block bg-transparent border-2 border-[#EEAD2B] text-[#EEAD2B] px-8 py-3 rounded-md hover:bg-[#EEAD2B] hover:text-[#2b2d42] transition font-bold">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSection(section) {
+            const section3d = document.getElementById('section-3d');
+            const sectionDesign = document.getElementById('section-design');
+            const sectionVideo = document.getElementById('section-video');
+            
+            // Get content wrappers (first child div with transition classes)
+            const content3d = section3d.querySelector('.transition-all');
+            const contentDesign = sectionDesign.querySelector('.transition-all');
+            const contentVideo = sectionVideo.querySelector('.transition-all');
+            
+            if (section === 'design') {
+                // Coming from 3D or Video
+                if (!section3d.classList.contains('hidden')) {
+                    // From 3D - swipe out to the left
+                    content3d.style.opacity = '0';
+                    content3d.style.transform = 'translateX(-100%)';
+                    
+                    setTimeout(() => {
+                        section3d.classList.add('hidden');
+                        sectionDesign.classList.remove('hidden');
+                        
+                        contentDesign.style.opacity = '0';
+                        contentDesign.style.transform = 'translateX(100%)';
+                        contentDesign.offsetHeight;
+                        
+                        contentDesign.style.opacity = '1';
+                        contentDesign.style.transform = 'translateX(0)';
+                    }, 700);
+                } else if (!sectionVideo.classList.contains('hidden')) {
+                    // From Video - swipe out to the right
+                    contentVideo.style.opacity = '0';
+                    contentVideo.style.transform = 'translateX(100%)';
+                    
+                    setTimeout(() => {
+                        sectionVideo.classList.add('hidden');
+                        sectionDesign.classList.remove('hidden');
+                        
+                        contentDesign.style.opacity = '0';
+                        contentDesign.style.transform = 'translateX(-100%)';
+                        contentDesign.offsetHeight;
+                        
+                        contentDesign.style.opacity = '1';
+                        contentDesign.style.transform = 'translateX(0)';
+                    }, 700);
+                }
+                
+            } else if (section === '3d') {
+                // Swipe out Design section to the right
+                contentDesign.style.opacity = '0';
+                contentDesign.style.transform = 'translateX(100%)';
+                
+                setTimeout(() => {
+                    sectionDesign.classList.add('hidden');
+                    section3d.classList.remove('hidden');
+                    
+                    content3d.style.opacity = '0';
+                    content3d.style.transform = 'translateX(-100%)';
+                    content3d.offsetHeight;
+                    
+                    content3d.style.opacity = '1';
+                    content3d.style.transform = 'translateX(0)';
+                }, 700);
+                
+            } else if (section === 'video') {
+                // Swipe out Design section to the left
+                contentDesign.style.opacity = '0';
+                contentDesign.style.transform = 'translateX(-100%)';
+                
+                setTimeout(() => {
+                    sectionDesign.classList.add('hidden');
+                    sectionVideo.classList.remove('hidden');
+                    
+                    contentVideo.style.opacity = '0';
+                    contentVideo.style.transform = 'translateX(100%)';
+                    contentVideo.offsetHeight;
+                    
+                    contentVideo.style.opacity = '1';
+                    contentVideo.style.transform = 'translateX(0)';
+                }, 700);
+            }
+            
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="relative bg-[#1a1b26]/70 text-gray-400 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Mary Grace Alvarez. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

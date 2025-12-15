@@ -1,0 +1,20 @@
+{
+  "name": "grace-portfolio",
+  "version": "1.0.0",
+  "description": "Grace's portfolio website built with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwind",
+    "website"
+  ],
+  "author": "Grace",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
